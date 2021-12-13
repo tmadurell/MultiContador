@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Contador Rey y resetea tot-->
+
+    <TextView
+        android:id="@+id/ContadorTot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@id/Reset1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ResetTot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/ResetTot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="RESET ALL"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/Reset1"
+        app:layout_constraintLeft_toRightOf="@id/ContadorTot"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Primer boto y reset-->
+
+    <TextView
+        android:id="@+id/Contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/Reset2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/augmentarElContador1"
+        app:layout_constraintTop_toBottomOf="@id/ContadorTot" />
+
+    <Button
+        android:id="@+id/augmentarElContador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/Reset2"
+        app:layout_constraintLeft_toRightOf="@id/Contador1"
+        app:layout_constraintRight_toLeftOf="@id/Reset1"
+        app:layout_constraintTop_toBottomOf="@+id/ResetTot" />
+
+
+    <Button
+        android:id="@+id/Reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@id/Reset2"
+        app:layout_constraintLeft_toRightOf="@id/augmentarElContador1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResetTot" />
+
+
+    <!-- Segon boto y reset-->
+
+    <TextView
+        android:id="@+id/Contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/Reset3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/augmentarElContador2"
+        app:layout_constraintTop_toBottomOf="@id/Contador1" />
+
+
+    <Button
+        android:id="@+id/augmentarElContador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/Reset3"
+        app:layout_constraintLeft_toRightOf="@id/Contador2"
+        app:layout_constraintRight_toLeftOf="@id/Reset2"
+        app:layout_constraintTop_toBottomOf="@+id/Reset1" />
+
+
+    <Button
+        android:id="@+id/Reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@id/Reset3"
+        app:layout_constraintLeft_toRightOf="@id/augmentarElContador2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reset1" />
+
+
+    <!-- Tercer boto y reset-->
+
+    <TextView
+        android:id="@+id/Contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/Reset4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/augmentarElContador2"
+        app:layout_constraintTop_toBottomOf="@+id/Reset2" />
+
+    <Button
+        android:id="@+id/augmentarElContador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/Reset4"
+        app:layout_constraintLeft_toRightOf="@id/Contador3"
+        app:layout_constraintRight_toLeftOf="@id/Reset3"
+        app:layout_constraintTop_toBottomOf="@+id/Reset2" />
+
+    <Button
+        android:id="@+id/Reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@id/Reset4"
+        app:layout_constraintLeft_toRightOf="@id/augmentarElContador3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reset2" />
+
+    <!-- Quart boton y reset-->
+
+    <TextView
+        android:id="@+id/Contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/augmentarElContador4"
+        app:layout_constraintTop_toBottomOf="@id/Reset3" />
+
+    <Button
+        android:id="@+id/augmentarElContador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Contador4"
+        app:layout_constraintRight_toLeftOf="@id/Reset4"
+        app:layout_constraintTop_toBottomOf="@+id/Reset3" />
+
+    <Button
+        android:id="@+id/Reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/augmentarElContador4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Reset3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
